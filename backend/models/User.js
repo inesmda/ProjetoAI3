@@ -1,11 +1,11 @@
 const mongoose = require("../database");
 
 const SchemaUser = new mongoose.Schema({
-    firstname: {
+    firstName: {
         type: String,
         required: true,
     },
-    lastname:{
+    lastName:{
         type: String,
         required: true,
     },
@@ -24,14 +24,14 @@ const SchemaUser = new mongoose.Schema({
         required: true,
         select: false
     },
-    phonenumber: {
+    phoneNumber: {
         type: Number,
         unique: true
     },
     address: {
         type: String
     },
-    postalcode: {
+    postalCode: {
         type: String
     },
     city: {
@@ -40,11 +40,18 @@ const SchemaUser = new mongoose.Schema({
     country: {
         type: String
     },
-    createdat: {
+    createdAt: {
         type: Date,
         default: Date.now
     },
 });
+
+SchemaUser.pre("save", async function (next) {
+    const hash = await bcrypt.hash(this.password, 10);
+    this.password = hash;
+  
+    next();
+  });
 
 const User = mongoose.model("Users", SchemaUser);
 
