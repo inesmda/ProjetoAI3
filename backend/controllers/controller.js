@@ -1,11 +1,18 @@
 const express = require("express");
+const User = require("../models/User");
 const router = express.Router();
-const authMiddleware = require("../middleware/middlewareAuth")
 
-router.use(authMiddleware);
+router.post("/register", async (req, res) => {
+    try {
+        const user = await User.create(req.body);
 
-router.get("/product", async (req, res) => {
-    res.send({ products: true, user: req.userId });
+        return res.send({ user });
+    }
+    
+    catch (err) {
+        return res.status(400).send({ error: "Registration Failed!" });
+
+    }
 });
 
-module.exports = (app) => app.use(router);
+module.exports = app => app.use(router)

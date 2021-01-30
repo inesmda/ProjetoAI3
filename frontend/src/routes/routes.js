@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 //Importação dos Componentes
 import Homepage from '../pages/homepage/homepage'
 import Login from '../pages/login/login'
-import Register from '../pages/login/register'
+import Register from '../pages/user/addUser'
 
 function Routes () {
     return(
