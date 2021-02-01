@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
+import view from "../../img/view.png";
 
-export const TableProdutos = (props) => {
+export const TableProducts = (props) => {
     return(
 <div class="container">
             <div class="row">
@@ -28,7 +29,8 @@ export const TableProdutos = (props) => {
                                         <td>{props.category}</td>
                                         <td>{props.price}</td>
                                         <td>{props.status}</td>
-                                        <td> <Link to="" style={{ color: 'inherit', textDecoration: 'inherit'}}> Ver </Link>
+                                        <td>
+                                            <Link to="/product"> <img src={ view } alt="viewuser" width="20" height="20" /> </Link>
                                         </td>
                                     </tr>
                                 </tbody>
