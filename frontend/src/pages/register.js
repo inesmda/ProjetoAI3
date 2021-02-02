@@ -14,7 +14,7 @@ function Register() {
                 <div className="addprd col-sm-9 col-md-7 col-lg-10 mx-auto">
                     <div className="card card-signin my-5">
                         <div className="card-body">
-                            <h5 class="card-title text-center mb-3">Adicionar Utilizador</h5>
+                            <h5 class="card-title text-center mb-3">Registar</h5>
 
 
                             <form className="  form-signin">
@@ -61,7 +61,7 @@ function Register() {
                                       <input type="text" id="inputCountry" className="form-control" placeholder="País" required />
                                 </div>
 
-                                <button id="confbt" class="btn col-12 btn-sm  btn-outline-primary  btn-block text-uppercase" type="submit">Adicionar</button>
+                                <button id="confbt" class="btn col-12 btn-sm  btn-outline-primary  btn-block text-uppercase" type="submit">Registar</button>
                             </div>
                           </div>
                           </form>
