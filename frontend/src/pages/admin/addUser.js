@@ -1,12 +1,12 @@
 import React from 'react'
 
-import NavBar from '../../components/navbar/navBar1'
+import { NavBarA } from '../../components/navbar/navBarA'
 
 function AddUser() {
     return (
         <body>
           <header>
-            <NavBar />
+            <NavBarA />
           </header>
           <main>
           <div className="container">

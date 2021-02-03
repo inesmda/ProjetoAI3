@@ -39,7 +39,7 @@ export const TableProductsA = (props) => {
                                         <td>{props.status}</td>
                                         <td>
                                             <Link to="/product"> <img src={ view } alt="viewuser" width="20" height="20" /> </Link>
-                                            <Link to="/product"> <img src={ edit } alt="viewuser" width="20" height="20" /> </Link>
+                                            <Link to="/editproduct"> <img src={ edit } alt="viewuser" width="20" height="20" /> </Link>
                                             <Link to="/product"> <img src={ del } alt="viewuser" width="20" height="20"/> </Link>
                                         </td>
                                     </tr>

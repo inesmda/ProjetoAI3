@@ -6,15 +6,14 @@ import { Link } from "react-router-dom";
 
 export const NavBarU = (props) => {
     return(
-<nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <div className="container-fluid">
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
+        <nav className="navbar navbar-expand-lg" style={{backgroundColor:'#2F1793'}}>
+            <div className="container">
 
-                <Link to="/">
-                    <button className="btn shadow-none">ONSTORE</button>
-                </Link>
+                <div className="nav-item">
+                    <Link to="/">
+                        <button className="btn shadow-none" style={{color:'white'}}>ONSTORE</button>
+                    </Link>
+                </div>
 
                 <div className="collapse navbar-collapse " id="navbarTogglerDemo03">
                     
@@ -25,7 +24,7 @@ export const NavBarU = (props) => {
                 </Link>
 
                 <Link to="/user">
-                    <button type="button" className="btn shadow-none">{props.name}</button>
+                    <button type="button" className="btn shadow-none" style={{color:'white'}}>{props.name}</button>
                 </Link>
             </div>
         </nav>

@@ -10,6 +10,7 @@ import UserList from '../pages/admin/userList'
 import AddUser from '../pages/admin/addUser'
 import ProductList from '../pages/admin/productList'
 import AddProduct from '../pages/admin/addProduct'
+import EditProduct from '../pages/admin/editProduct'
 import OrderList from '../pages/admin/orderList'
 
 function Routes () {
@@ -26,6 +27,7 @@ function Routes () {
                 <Route path="/adduser" component={AddUser} />
                 <Route path="/products" component={ProductList} />
                 <Route path="/addproduct" component={AddProduct} />
+                <Route path="/editproduct" component={EditProduct} />
                 <Route path="/orders" component={OrderList} />
 
                 //user routes

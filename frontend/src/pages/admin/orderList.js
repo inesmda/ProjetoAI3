@@ -12,7 +12,7 @@ function OrderList() {
           <TableOrders
           id="1"
           price="234.12€"
-          status="recieved" />
+          status="Recebido" />
 
           
         </main>

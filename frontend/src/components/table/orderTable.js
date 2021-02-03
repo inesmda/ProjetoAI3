@@ -10,12 +10,6 @@ export const TableOrders = (props) => {
     return(
 <div class="container">
             <div class="row">
-                <div class="sign col-sm-9 col-md-7 col-lg-9 mx-auto mt-5">
-                        <Link to="/addproduct">
-                            <button type="button" class="btn btn-small btn-outline-success">Adicionar Encomenda</button>
-                        </Link>
-                </div>
-
                 <div class="signn col-sm-9 col-md-7 col-lg-9 mx-auto">
                     <div class="card  my-5">
                         <div class="card-body">
