@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export const NavBarU = (props) => {
     return(
-        <nav className="navbar navbar-expand-lg" style={{backgroundColor:'#2F1793'}}>
+        <nav className="navbar navbar-expand-lg" style={{backgroundColor:'#0D6EFD'}}>
             <div className="container">
 
                 <div className="nav-item">

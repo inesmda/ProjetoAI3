@@ -9,7 +9,7 @@ export const TableProducts = (props) => {
 <div class="container">
             <div class="row">
                 <div class="signn col-sm-9 col-md-7 col-lg-9 mx-auto">
-                    <div class="card  my-5">
+                    <div class="card my-5">
                         <div class="card-body">
                             <table class="table table-striped">
                                 <thead class="thead-light">
