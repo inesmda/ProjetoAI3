@@ -23,7 +23,7 @@ function Login() {
                                     <input type="password" id="inputPassword" className="form-control" placeholder="Password" required />
                                 </div>
 
-                                <button className="btn col-12 btn-lg btn-outline-primary btn-block text-uppercase mb-3" type="submit">Login</button>
+                                <button className="btn col-12 btn-primary btn-block text-uppercase mb-3" type="submit">Login</button>
 
                                 <p className="text-center"><a href="register" className="btn shadow-none">Register?</a></p>
 

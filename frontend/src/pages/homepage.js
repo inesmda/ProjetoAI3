@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import { NavBarA } from '../components/navbar/navBarA'
 import { CardProducts } from '../components/card/card.js'
-import { Card } from '../components/card/card.js'
+import { CardFilter } from '../components/card/card.js'
 import { Button } from '../components/button/button.js'
 
 function Homepage() {
@@ -34,7 +34,8 @@ function Homepage() {
             </div>
             <div className="row">
             <div className="col-3">
-                <Card />
+                <CardFilter 
+                  />
               </div>
                 <div className="col">
                   <div className="row">

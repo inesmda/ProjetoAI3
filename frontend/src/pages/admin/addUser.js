@@ -1,12 +1,13 @@
 import React from 'react'
-
 import { NavBarA } from '../../components/navbar/navBarA'
 
 function AddUser() {
     return (
         <body>
           <header>
-            <NavBarA />
+            <NavBarA 
+                name="Admin"
+            />
           </header>
           <main>
           <div className="container">
@@ -61,7 +62,9 @@ function AddUser() {
                                       <input type="text" id="inputCountry" className="form-control" placeholder="País" required />
                                 </div>
 
-                                <button id="confbt" class="btn col-12 btn-sm  btn-outline-primary  btn-block text-uppercase" type="submit">Adicionar</button>
+                                <div>
+                                    <button className="btn col-12 btn-primary btn-block text-uppercase mb-3" type="submit">Adicionar</button>
+                                </div>
                             </div>
                           </div>
                           </form>

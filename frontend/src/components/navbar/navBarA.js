@@ -1,6 +1,6 @@
 import React from 'react';
 import "bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.css";
 import shopCart from "../../img/shopcart.png";
 import { Link } from "react-router-dom";
 
@@ -42,8 +42,10 @@ export const NavBarA = (props) => {
                     </Link>
             
                     <Link to="/user">
-                        <button type="button" class="btn shadow-none" style={{color:'white'}}>{props.name}</button>
-                    </Link>   
+                        <button type="button" className="btn shadow-none" style={{ color:'white' }} >
+                            {props.name}
+                        </button>
+                    </Link>
                 </div>
             </div>
         </nav>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import NavBar from '../components/navbar/navBar1'
+import NavBar from '../../components/navbar/navBar1'
 
 function Register() {
     return (
@@ -61,7 +61,7 @@ function Register() {
                                       <input type="text" id="inputCountry" className="form-control" placeholder="País" required />
                                 </div>
 
-                                <button id="confbt" class="btn col-12 btn-sm  btn-outline-primary  btn-block text-uppercase" type="submit">Registar</button>
+                                <button class="btn col-12 btn-primary btn-block text-uppercase" type="submit">Registar</button>
                             </div>
                           </div>
                           </form>

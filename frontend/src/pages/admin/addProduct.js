@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavBarA } from '../../components/navbar/navBarA'
-import { ConfirmButton } from '../../components/button/button'
 
 function AddProduct() {
     return (
@@ -15,7 +14,7 @@ function AddProduct() {
                 <div className="col-sm-9 col-md-7 col-lg-10 mx-auto">
                     <div className="card my-5">
                         <div className="card-body">
-                            <h5 class="card-title text-center mb-3">Adicionar Produto</h5>
+                            <h5 className="card-title text-center mb-3">Adicionar Produto</h5>
                             <form className="form-signin">
                                 <div className="row">
                                     <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
@@ -55,9 +54,9 @@ function AddProduct() {
                                             </div>
                                         </div>
                                         <div>
-                                            <ConfirmButton
-                                                title="Adicionar"
-                                            />
+                                        <div>
+                                            <button className="btn col-12 btn-primary btn-block text-uppercase mb-3" type="submit">Adicionar</button>
+                                        </div>
                                         </div>
                                     </div>
                                 </div>

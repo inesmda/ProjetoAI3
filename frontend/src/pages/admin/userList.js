@@ -10,11 +10,11 @@ function userList() {
             </header>
             <main>
                 <TableUsers 
-                id="1"
-                firstName="Primeiro"
-                lastName="Último"
-                phoneNumber="987654321"
-                localidade="Viseu" />
+                    id="1"
+                    firstName="Primeiro"
+                    lastName="Último"
+                    phoneNumber="987654321"
+                    localidade="Viseu" />
             </main>
             <footer></footer>
         </body>
