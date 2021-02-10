@@ -14,6 +14,7 @@ import EditProduct from '../pages/admin/editProduct'
 import OrderList from '../pages/admin/orderList'
 
 import UserPage from '../pages/user/userpage'
+import Cart from '../pages/user/cart'
 
 function Routes () {
     return(
@@ -34,6 +35,7 @@ function Routes () {
 
                 //user routes
                 <Route path="/user" component={UserPage} />
+                <Route path="/cart" component={Cart} />
 
             </Switch>
         </Router>
