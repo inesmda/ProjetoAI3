@@ -13,7 +13,7 @@ function Cart() {
           <main>
             <div class="row">
                 <div class="col-8 mx-auto mt-5">
-                    <div className="row mb-2">
+                    <div className="row mb-4">
                         <div className="col">
                             <h5>O Meu Carrinho</h5>
                         </div>

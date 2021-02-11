@@ -33,13 +33,13 @@ function Homepage() {
               </div>
             </div>
             <div className="row">
-            <div className="col-3">
+            <div className="col-2">
                 <CardFilter 
                   />
               </div>
                 <div className="col">
                   <div className="row">
-                    <div className="col-3" style={{ marginBottom: 20 }}>
+                    <div className="col-2" style={{ marginBottom: 20 }}>
                     <Link to="/product" style={{ textDecoration: "none" }}>
                       <CardProducts
                         name="Samsung Galaxy S20"
@@ -47,37 +47,37 @@ function Homepage() {
                       />
                     </Link>
                     </div>
-                  <div className="col-3">
+                  <div className="col-2">
                     <CardProducts
                       name="Samsung Galaxy S20"
                       price="950€"
                     />
                   </div>
-                  <div className="col-3">
+                  <div className="col-2">
                     <CardProducts
                       name="Samsung Galaxy S20"
                       price="950€"
                     />
                   </div>
-                  <div className="col-3">
+                  <div className="col-2">
                     <CardProducts
                       name="Samsung Galaxy S20"
                       price="950€"
                     />
                   </div>
-                  <div className="col-3">
+                  <div className="col-2">
                     <CardProducts
                       name="Samsung Galaxy S20"
                       price="950€"
                     />
                   </div>
-                  <div className="col-3">
+                  <div className="col-2">
                     <CardProducts
                       name="Samsung Galaxy S20"
                       price="950€"
                     />
                   </div>
-                  <div className="col-3">
+                  <div className="col-2">
                     <CardProducts
                       name="Samsung Galaxy S20"
                       price="950€"

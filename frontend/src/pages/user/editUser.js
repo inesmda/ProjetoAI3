@@ -14,14 +14,12 @@ function AddUser() {
                 <div class="col-8 mx-auto mt-5">
                     <div className="row mb-2">
                         <div className="col">
-                            <h5>Adicionar Utilizador</h5>
+                            <h5>Editar Utilizador</h5>
                         </div>
                     </div>
 
-                    <div class="card mt-4">
-                    <div class="card-body">
                     <div className="row">
-                        <form className="form my-3">
+                        <form className="form mt-4">
                                 <div className="row">
                                     <div className="col">
                                 <div className="form-label-group mb-3">
@@ -66,13 +64,11 @@ function AddUser() {
                                 </div>
 
                                 <div>
-                                    <button className="btn col-12 btn-primary btn-block text-uppercase mb-3" type="submit">Adicionar</button>
+                                    <button className="btn col-12 btn-primary btn-block text-uppercase mb-3" type="submit">Guardar</button>
                                 </div>
                             </div>
                           </div>
                         </form>
-                    </div>
-                    </div>
                     </div>
                 </div>
             </div>

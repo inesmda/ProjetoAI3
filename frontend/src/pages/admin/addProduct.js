@@ -9,15 +9,20 @@ function AddProduct() {
                 name="Admin"/>
           </header>
           <main>
-        <div className="container">
-            <div className="row">
-                <div className="col-sm-9 col-md-7 col-lg-10 mx-auto">
-                    <div className="card my-5">
-                        <div className="card-body">
-                            <h5 className="card-title text-center mb-3">Adicionar Produto</h5>
-                            <form className="form-signin">
-                                <div className="row">
-                                    <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="row">
+                <div class="col-8 mx-auto mt-5">
+                    <div className="row mb-2">
+                        <div className="col">
+                            <h5>Adicionar Produto</h5>
+                        </div>
+                    </div>
+
+                    <div class="card mt-4">
+                    <div class="card-body">
+                    <div className="row">
+                        <form className="form-signin">
+                                <div className="row mt-4">
+                                    <div className="col">
 
                                         <div className="form-label-group mb-3">
                                             <input type="text" id="inputEmail" className="form-control" placeholder="Produto" required autofocus />
@@ -33,7 +38,7 @@ function AddProduct() {
                                         </div>
                                     </div>
 
-                                    <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                                    <div className="col">
                                         <div className="form-label-group">
                                             <div class="form-group mb-3" >
                                                 <select class="form-control">
@@ -60,13 +65,13 @@ function AddProduct() {
                                         </div>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
+                        </form>
+                    </div>
+                    </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </main>
+          </main>
           <footer></footer>
         </body>
     );

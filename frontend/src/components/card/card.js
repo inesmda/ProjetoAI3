@@ -3,6 +3,7 @@ import { Button } from '../button/button'
 import S21 from '../../img/s21.png'
 import del from "../../img/delete.png";
 import { ConfirmButton } from '../../components/button/button'
+import { auto } from "@popperjs/core";
 
 export const CardFilter = (props) => {
   return (
@@ -45,7 +46,7 @@ export const CardFilter = (props) => {
 export const CardProducts = (props) => {
   return (
     <div className="card" style={{ alignItems: "center" }}>
-      <img className="card-img-top" src={ S21 } alt="product_img" />
+      <img className="card-img-top mt-2" src={ S21 } alt="product_img" style={{ height: "200px", width: auto }}/>
       <div className="card-body" >
         <h5 className="card-title">{props.name}</h5>
         <p className="card-text">{props.price}</p>
@@ -111,10 +112,10 @@ export const CardCartTotal = (props) => {
             </div>
 
             <div className="row mt-2">
-              <div className="col-5"></div>
-              <div className="col-7 my-auto">
+              <div className="col-7"></div>
+              <div className="col-4 my-auto">
                 <ConfirmButton 
-                    title="Confirmar Compra"
+                    title="Comprar"
                 />
               </div>
             </div>
