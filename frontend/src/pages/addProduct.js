@@ -1,23 +1,24 @@
 import React from 'react'
-import { NavBarA } from '../../components/navbar/navBarA'
+import { NavBarA } from '../components/navbar/navBarA'
 
-function EditProduct() {
+function AddProduct() {
     return (
         <body>
           <header>
             <NavBarA 
-                name="Admin"
-            />
+                name="Admin"/>
           </header>
           <main>
             <div class="row">
                 <div class="col-8 mx-auto mt-5">
                     <div className="row mb-2">
                         <div className="col">
-                            <h5>Editar Produto</h5>
+                            <h5>Adicionar Produto</h5>
                         </div>
                     </div>
 
+                    <div class="card mt-4">
+                    <div class="card-body">
                     <div className="row">
                         <form className="form-signin">
                                 <div className="row mt-4">
@@ -59,19 +60,21 @@ function EditProduct() {
                                         </div>
                                         <div>
                                         <div>
-                                            <button className="btn col-12 btn-primary btn-block text-uppercase mb-3" type="submit">Guardar</button>
+                                            <button className="btn col-12 btn-primary btn-block text-uppercase mb-3" type="submit">Adicionar</button>
                                         </div>
                                         </div>
                                     </div>
                                 </div>
                         </form>
                     </div>
+                    </div>
+                    </div>
                 </div>
             </div>
-        </main>
+          </main>
           <footer></footer>
         </body>
     );
   }
   
-  export default EditProduct;
+  export default AddProduct;

@@ -1,8 +1,8 @@
 import React from 'react'
-import { NavBarA } from '../../components/navbar/navBarA'
-import { TableOrders } from '../../components/table/orderTable'
+import { NavBarA } from '../components/navbar/navBarA'
+import { TableOrders } from '../components/table/orderTable'
 
-function OrderList() {
+function ClosedOrders() {
   return (
       <body>
         <header>
@@ -13,7 +13,7 @@ function OrderList() {
                 <div class="col-8 mx-auto mt-5">
                     <div className="row mb-2">
                         <div className="col">
-                            <h5>Pendentes</h5>
+                            <h5>Concluídas</h5>
                         </div>
                     </div>
                       <TableOrders
@@ -27,4 +27,4 @@ function OrderList() {
   );
 }
 
-export default OrderList;
+export default ClosedOrders;

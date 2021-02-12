@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import { NavBarA } from '../../components/navbar/navBarA'
-import { TableProducts } from '../../components/table/productTable'
-import { Button } from '../../components/button/button'
+import { NavBarA } from '../components/navbar/navBarA'
+import { TableProducts } from '../components/table/productTable'
+import { Button } from '../components/button/button'
 
 function ProductList() {
   return (

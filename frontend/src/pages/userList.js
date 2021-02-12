@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { NavBarA } from '../../components/navbar/navBarA'
-import { TableUsers } from '../../components/table/userTable'
-import { Button } from '../../components/button/button'
+import { NavBarA } from '../components/navbar/navBarA'
+import { TableUsers } from '../components/table/userTable'
+import { Button } from '../components/button/button'
 
 function userList() {
     return (

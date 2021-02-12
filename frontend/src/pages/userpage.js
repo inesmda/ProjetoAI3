@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import { NavBarA } from '../../components/navbar/navBarA'
-import edit from "../../img/edit.png";
+import { NavBarA } from '../components/navbar/navBarA'
+import edit from "../img/edit.png";
 
 function UserPage() {
     return (
@@ -21,7 +21,7 @@ function UserPage() {
                                             <h5>As Minhas Informações</h5>
                                         </div>
                                         <div className="col-1">
-                                            <Link to="/user/edit"> <img src={ edit } alt="viewuser" width="20" height="20" /> </Link>
+                                            <Link to="/user/edit/:id"> <img src={ edit } alt="viewuser" width="20" height="20" /> </Link>
                                         </div>
                                     </div>
                                     

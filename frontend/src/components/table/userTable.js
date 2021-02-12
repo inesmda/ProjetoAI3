@@ -30,8 +30,8 @@ export const TableUsers = (props) => {
                                 <td>{props.phoneNumber}</td>
                                 <td>{props.localidade}</td>
                                 <td>
-                                    <Link to="/user"> <img src={ view } alt="viewuser" width="20" height="20" /> </Link>
-                                    <Link to="/user/edit"> <img src={ edit } alt="viewuser" width="20" height="20" /> </Link>
+                                    <Link to="/user/:id"> <img src={ view } alt="viewuser" width="20" height="20" /> </Link>
+                                    <Link to="/user/edit/:id"> <img src={ edit } alt="viewuser" width="20" height="20" /> </Link>
                                     <Link to=""> <img src={ del } alt="viewuser" width="20" height="20"/> </Link>
                                 </td>
                             </tr>

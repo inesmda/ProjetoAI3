@@ -12,11 +12,10 @@ function Homepage() {
           <NavBarA name="Admin" />
         </header>
         <main>
-        <div className="container-fluid" style={{ marginBottom: 30 }}>
-            <div className="row" style={{ marginTop: 50, marginBottom: 30 }} >
-              <div className="col-3">
-              </div>
-              <div className="col-6">
+          <div class="row">
+            <div class="col-8 mx-auto mt-5">
+            <div className="row">
+              <div className="col-6 mx-auto my-auto">
                 <form className="d-flex">
                   <input
                     className="form-control me-2"
@@ -29,17 +28,16 @@ function Homepage() {
                   />
                 </form>
               </div>
-              <div className="col-3">
-              </div>
             </div>
-            <div className="row">
-            <div className="col-2">
+            <div className="row mt-4">
+            <div className="col-3">
                 <CardFilter 
                   />
               </div>
-                <div className="col">
+                <div className="col-9">
                   <div className="row">
-                    <div className="col-2" style={{ marginBottom: 20 }}>
+
+                    <div className="col-4 mb-4">
                     <Link to="/product" style={{ textDecoration: "none" }}>
                       <CardProducts
                         name="Samsung Galaxy S20"
@@ -47,44 +45,40 @@ function Homepage() {
                       />
                     </Link>
                     </div>
-                  <div className="col-2">
+                  <div className="col-4">
                     <CardProducts
                       name="Samsung Galaxy S20"
                       price="950€"
                     />
                   </div>
-                  <div className="col-2">
+                  <div className="col-4">
                     <CardProducts
                       name="Samsung Galaxy S20"
                       price="950€"
                     />
                   </div>
-                  <div className="col-2">
+                  <div className="col-4">
                     <CardProducts
                       name="Samsung Galaxy S20"
                       price="950€"
                     />
                   </div>
-                  <div className="col-2">
+                  <div className="col-4">
                     <CardProducts
                       name="Samsung Galaxy S20"
                       price="950€"
                     />
                   </div>
-                  <div className="col-2">
+                  <div className="col-4">
                     <CardProducts
                       name="Samsung Galaxy S20"
                       price="950€"
                     />
                   </div>
-                  <div className="col-2">
-                    <CardProducts
-                      name="Samsung Galaxy S20"
-                      price="950€"
-                    />
-                  </div>
+                  
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </main>

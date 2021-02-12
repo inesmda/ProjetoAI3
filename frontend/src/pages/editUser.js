@@ -1,7 +1,7 @@
 import React from 'react'
-import { NavBarA } from '../../components/navbar/navBarA'
+import { NavBarA } from '../components/navbar/navBarA'
 
-function AddUser() {
+function EditUser() {
     return (
         <body>
           <header>
@@ -14,7 +14,7 @@ function AddUser() {
                 <div class="col-8 mx-auto mt-5">
                     <div className="row mb-2">
                         <div className="col">
-                            <h5>Adicionar Utilizador</h5>
+                            <h5>Editar Utilizador</h5>
                         </div>
                     </div>
 
@@ -66,7 +66,7 @@ function AddUser() {
                                 </div>
 
                                 <div>
-                                    <button className="btn col-12 btn-primary btn-block text-uppercase mb-3" type="submit">Adicionar</button>
+                                    <button className="btn col-12 btn-primary btn-block text-uppercase mb-3" type="submit">Guardar</button>
                                 </div>
                             </div>
                           </div>
@@ -82,4 +82,4 @@ function AddUser() {
     );
   }
   
-  export default AddUser;
+  export default EditUser;

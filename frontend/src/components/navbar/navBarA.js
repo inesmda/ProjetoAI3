@@ -41,7 +41,7 @@ export const NavBarA = (props) => {
                         <button type="button" className="btn shadow-none"><img src={ shopCart } alt="shoppingcart" width="20" height="20" style={{fill:'white'}} /></button>
                     </Link>
             
-                    <Link to="/user">
+                    <Link to="/user/page/:id">
                         <button type="button" className="btn shadow-none" style={{ color:'white' }} >
                             {props.name}
                         </button>
