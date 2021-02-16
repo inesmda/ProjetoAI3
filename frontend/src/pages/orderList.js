@@ -26,7 +26,7 @@ function OrderList() {
                       <TableOrders
                         id="1"
                         orderDate="01/02/2020"
-                        price="234.12€"
+                        price="950€"
                         status="Recebido" 
                       />
                 </div>

@@ -21,6 +21,8 @@ import AddProduct from '../pages/addProduct'
 import EditProduct from '../pages/editProduct'
 
 import OrderList from '../pages/orderList'
+import OrderPage from '../pages/orderPage'
+import EditOrder from '../pages/editOrder'
 
 import Cart from '../pages/cart'
 
@@ -46,6 +48,8 @@ function Routes () {
                 <Route path="/product/edit/:id" component={EditProduct} />
                 
                 <Route path="/orders" component={OrderList} />
+                <Route path="/order/page/:id" component={OrderPage} />
+                <Route path="/order/edit/:id" component={EditOrder} />
 
                 <Route path="/cart" component={Cart} />
 
