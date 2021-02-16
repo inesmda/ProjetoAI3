@@ -4,6 +4,7 @@ import S21 from '../../img/s21.png'
 import del from "../../img/delete.png";
 import { ConfirmButton } from '../../components/button/button'
 import { auto } from "@popperjs/core";
+import { Link } from "react-router-dom";
 
 export const CardFilter = (props) => {
   return (
@@ -31,6 +32,7 @@ export const CardFilter = (props) => {
               <div className="form-group" >
                 <select className="form-control mt-2">
                   <option>Ordenar Por</option>
+                  <option>Relevânica</option>
                   <option>Nome</option>
                   <option>Preço</option>
                 </select>
@@ -43,16 +45,84 @@ export const CardFilter = (props) => {
   )
 }
 
-export const CardProducts = (props) => {
+export const CardProductHP = (props) => {
   return (
-    <div className="card" style={{ alignItems: "center" }}>
+    <div className="card" style={{ alignItems: 'center' }}>
       <img className="card-img-top mt-2" src={ S21 } alt="product_img" style={{ height: "200px", width: auto }}/>
       <div className="card-body" >
-        <h5 className="card-title">{props.name}</h5>
-        <p className="card-text">{props.price}</p>
-        <Button 
-          title="Adicionar ao Carrinho"
-        />
+        <h6 className="card-title" style={{ color: 'black' }}>{props.name}</h6>
+        <h5 className="card-text" style={{ color: '#0D6EFD' }}>{props.price}</h5>
+      </div>
+    </div>
+  )
+}
+
+export const CardProduct = (props) => {
+  return (
+    <div className="row">
+      <div className="col-8">
+        <div className="card">
+          <div className="card-body">
+            <div className="row">
+              <div className="col-1">
+              </div>
+              <div className="col-4 my-auto">
+                <img src={ S21 } alt="product_img" style={{ height: "200px", width: auto }}/>
+              </div>
+              <div className="col-6 my-auto">
+                <div className="row" style={{ textAlign: 'right' }}>
+                  <div className="col">
+                    <h4 className="card-text">{props.name}</h4>
+                    <h6 className="card-text" style={{ color: '#3CB043' }}>{props.status}</h6>
+                    <h4 className="card-text" style={{ color: '#0D6EFD' }}>{props.price}</h4>
+                    <Button
+                      title="Comprar"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="col-4">
+        <div className="card">
+          <div className="card-body">
+            <div className="row">
+              <h5 className="card-text mt-2 mb-3">Informações Produto</h5>
+
+              <div className="mt-2">
+                <h6 style={{ color: "#0D6EFD" }}>Produto</h6>
+                <p>{props.name}</p>
+              </div>
+
+              <div className="mt-2">
+                <h6 style={{ color: "#0D6EFD" }}>Referência</h6>
+                <p>{props.id}</p>
+              </div>
+
+              <div className="mt-2">
+                <h6 style={{ color: "#0D6EFD" }}>Marca</h6>
+                <p>{props.brand}</p>
+              </div>
+
+              <div className="mt-2">
+                <h6 style={{ color: "#0D6EFD" }}>Modelo</h6>
+                <p>{props.model}</p>
+              </div>
+
+              <div className="mt-2">
+                <h6 style={{ color: "#0D6EFD" }}>Cor</h6>
+                <p>{props.color}</p>
+              </div>
+
+              <div className="mt-2">
+                <h6 style={{ color: "#0D6EFD" }}>Peso</h6>
+                <p>{props.weight}</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
@@ -66,11 +136,15 @@ export const CardCartProduct = (props) => {
           <div class="card-body">
             <div className="row">
               <div className="col-1 my-auto">
-                <img src={ S21 } alt="product_img" style={{ height: "100px" }}/>
+                <Link to="/product/page/:id">
+                  <img src={ S21 } alt="product_img" style={{ height: "100px" }}/>
+                </Link>
               </div>
 
               <div className="col-6 my-auto text-center">
-                <h5>{props.name}</h5>
+                <Link to="/product/page/:id" style={{ textDecoration:"none", color: "black"}}>
+                  <h5>{props.name}</h5>
+                </Link>
               </div>
 
               <div className="col-2 my-auto">

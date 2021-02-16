@@ -19,11 +19,7 @@ function Cart() {
                         </div>
                     </div>
                             <CardCartProduct 
-                                name="Samsung Galaxy S21"
-                                price="950€"    
-                            />
-                            <CardCartProduct 
-                                name="Samsung Galaxy S21"
+                                name="Samsung Galaxy S20"
                                 price="950€"    
                             />
                             <CardCartTotal 

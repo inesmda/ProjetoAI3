@@ -23,9 +23,20 @@ export const NavBarU = (props) => {
                     <button type="button" className="btn shadow-none"><img src={ shopCart } alt="shoppingcart" width="20" height="20" /></button>
                 </Link>
 
-                <Link to="/user/page/:id">
-                    <button type="button" className="btn shadow-none" style={{color:'white'}}>{props.name}</button>
-                </Link>
+                <Dropdown>
+                        <Dropdown.Toggle className="shadow-none" style={{ backgroundColor:'#0D6EFD', border: "none" }}>
+                            {props.name}
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Dropdown.Item>
+                                <Link to="/user/page/:id" style={{ textDecoration:"none", color: "black"}}>
+                                    Conta
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item>Logout</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown> 
             </div>
         </nav>
     )

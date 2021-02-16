@@ -36,10 +36,27 @@ function AddProduct() {
                                         <div className="form-label-group mb-3">
                                             <input type="number" id="inputStock" className="form-control" placeholder="Stock" required />
                                         </div>
+
+                                        <div className="form-label-group mb-3">
+                                            <input type="text" id="inputMarca" className="form-control" placeholder="Marca" required />
+                                        </div>
+
+                                        <div className="form-label-group mb-3">
+                                             <input type="text" id="inputModelo" className="form-control" placeholder="Modelo" required />
+                                        </div>
                                     </div>
 
                                     <div className="col">
                                         <div className="form-label-group">
+                                            <div className="form-label-group mb-3">
+                                                <input type="text" id="inputPeso" className="form-control" placeholder="Peso" required />
+                                            </div>
+
+                                            <div className="form-label-group mb-3">
+                                                <input type="text" id="inputCor" className="form-control" placeholder="Cor" required />
+                                            </div>
+
+
                                             <div class="form-group mb-3" >
                                                 <select class="form-control">
                                                     <option>Categoria</option>

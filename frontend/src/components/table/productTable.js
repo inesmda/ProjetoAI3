@@ -31,7 +31,7 @@ export const TableProducts = (props) => {
                                 <td>{props.price}</td>
                                 <td>{props.status}</td>
                                 <td>
-                                    <Link to="/product/:id"> <img src={ view } alt="viewuser" width="20" height="20" /> </Link>
+                                    <Link to="/product/page/:id"> <img src={ view } alt="viewuser" width="20" height="20" /> </Link>
                                     <Link to="/product/edit/:id"> <img src={ edit } alt="viewuser" width="20" height="20" /> </Link>
                                     <Link to=""> <img src={ del } alt="viewuser" width="20" height="20"/> </Link>
                                 </td>

@@ -16,6 +16,7 @@ import PendingOrders from '../pages/orderPending'
 import ClosedOrders from '../pages/orderClosed'
 
 import ProductList from '../pages/productList'
+import ProductPage from '../pages/productPage'
 import AddProduct from '../pages/addProduct'
 import EditProduct from '../pages/editProduct'
 
@@ -40,6 +41,7 @@ function Routes () {
                 <Route path="/user/orders/closed" component={ClosedOrders} />
 
                 <Route path="/products" component={ProductList} />
+                <Route path="/product/page/:id" component={ProductPage} />
                 <Route path="/product/add" component={AddProduct} />
                 <Route path="/product/edit/:id" component={EditProduct} />
                 

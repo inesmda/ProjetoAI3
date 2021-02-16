@@ -1,6 +1,8 @@
 import React from 'react';
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Dropdown } from 'react-bootstrap'
 import shopCart from "../../img/shopcart.png";
 import { Link } from "react-router-dom";
 
@@ -40,12 +42,21 @@ export const NavBarA = (props) => {
                     <Link to="/cart">
                         <button type="button" className="btn shadow-none"><img src={ shopCart } alt="shoppingcart" width="20" height="20" style={{fill:'white'}} /></button>
                     </Link>
-            
-                    <Link to="/user/page/:id">
-                        <button type="button" className="btn shadow-none" style={{ color:'white' }} >
+
+                    <Dropdown>
+                        <Dropdown.Toggle className="shadow-none" style={{ backgroundColor:'#0D6EFD', border: "none" }}>
                             {props.name}
-                        </button>
-                    </Link>
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Dropdown.Item style={{ backgroundColor:'white' }}>
+                                <Link to="/user/page/:id" style={{ textDecoration:"none", color: "black"}}>
+                                    Conta
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item style={{ backgroundColor:'white' }}>Logout</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown> 
                 </div>
             </div>
         </nav>
