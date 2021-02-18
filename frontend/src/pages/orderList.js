@@ -1,8 +1,6 @@
 import React from 'react'
-import { Link } from "react-router-dom"
 import { NavBarA } from '../components/navbar/navBarA'
 import { TableOrders } from '../components/table/orderTable'
-import { Button } from '../components/button/button'
 
 function OrderList() {
   return (

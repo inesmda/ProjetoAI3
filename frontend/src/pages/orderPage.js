@@ -1,6 +1,4 @@
 import React from 'react'
-import { propTypes } from 'react-bootstrap/esm/Image';
-import { Link } from "react-router-dom";
 import { NavBarA } from '../components/navbar/navBarA'
 import { TableViewOrder } from '../components/table/orderTable'
 

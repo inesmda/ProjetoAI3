@@ -1,11 +1,10 @@
-import React from 'react';
-import "bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
-import { Button } from '../button/button.js'
-import view from "../../img/view.png";
-import edit from "../../img/edit.png";
-import del from "../../img/delete.png";
+import React from 'react'
+import "bootstrap"
+import "bootstrap/dist/css/bootstrap.min.css"
+import { Link } from "react-router-dom"
+import view from "../../img/view.png"
+import edit from "../../img/edit.png"
+import del from "../../img/delete.png"
 
 export const TableUsers = (props) => {
     return(

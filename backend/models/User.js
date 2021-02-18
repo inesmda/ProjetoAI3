@@ -1,6 +1,12 @@
-const mongoose = require("../database");
+const mongoose = require("../database")
+var bcrypt = require('bcryptjs');
+
 
 const SchemaUser = new mongoose.Schema({
+    typeId: {
+        type: mongoose.Types.ObjectId,
+        ref: 'UserType'
+    },
     firstName: {
         type: String,
         required: true,
@@ -39,11 +45,7 @@ const SchemaUser = new mongoose.Schema({
     },
     country: {
         type: String
-    },
-    createdAt: {
-        type: Date,
-        default: Date.now
-    },
+    }
 });
 
 SchemaUser.pre("save", async function (next) {
@@ -53,6 +55,6 @@ SchemaUser.pre("save", async function (next) {
     next();
   });
 
-const User = mongoose.model("Users", SchemaUser);
+const Users = mongoose.model("Users", SchemaUser);
 
-module.exports = User;
+module.exports = Users;

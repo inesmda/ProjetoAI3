@@ -1,18 +1,18 @@
-const mongoose = require("../database");
+const mongoose = require("../database")
 
 const SchemaOrder = new mongoose.Schema({
-    id: {
-        type: Number,
+    items:[{
+        product: {
+            type: mongoose.SchemaTypes.ObjectId,
+            ref: 'Product'
+        },
+        quantity: {
+            type: Number
+        }
+    }],
+    orderDate: {
+        type: Date,
         required: true,
-        unique: true
-    },
-    productId:{
-        type: Number,
-        required: true
-    },
-    quantity: {
-        type: Number,
-        required: true
     },
     shipDate: {
         type: Date,
@@ -25,7 +25,7 @@ const SchemaOrder = new mongoose.Schema({
         type: String,
         required: true
     },
-    price: {
+    finalPrice: {
         type: Number,
         required: true
     }

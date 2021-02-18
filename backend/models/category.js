@@ -1,12 +1,7 @@
-const mongoose = require("../database");
+const mongoose = require("../database")
 
 const SchemaCategory = new mongoose.Schema({
-    id: {
-        type: Number,
-        required: true,
-        unique: true
-    },
-    name:{
+    category:{
         type: String,
         required: true,
     }

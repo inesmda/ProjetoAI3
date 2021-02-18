@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "react-router-dom";
 import { NavBarA } from '../components/navbar/navBarA'
 import { CardProduct } from '../components/card/card.js'
 

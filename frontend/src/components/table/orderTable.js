@@ -5,7 +5,6 @@ import { Link } from "react-router-dom"
 import { ConfirmButton } from "../button/button"
 import view from "../../img/view.png"
 import edit from "../../img/edit.png"
-import del from "../../img/delete.png"
 
 export const TableOrders = (props) => {
     return(

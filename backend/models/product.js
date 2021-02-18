@@ -1,17 +1,13 @@
-const mongoose = require("../database");
+const { mongo } = require("../database");
+const mongoose = require("../database")
 
 const SchemaProduct = new mongoose.Schema({
-    id: {
-        type: Number,
-        required: true,
-        unique: true
-    },
-    category:{
-        type: String,
-        required: true,
-    },
     name: {
         type: String,
+    },
+    category:{
+        type: mongoose.SchemaTypes.ObjectId,
+        ref: 'Category',
     },
     stock: {
         type: Number,
@@ -27,6 +23,4 @@ const SchemaProduct = new mongoose.Schema({
     }
 });
 
-const Product = mongoose.model("Product", SchemaProduct);
-
-module.exports = Product;
+module.exports = mongoose.model('Product', SchemaProduct);
